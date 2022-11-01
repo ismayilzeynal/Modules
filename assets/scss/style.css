@@ -1,0 +1,114 @@
+.icon {
+  color: #005555;
+  font-size: 50px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.uploadInput {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .all-images {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.container .all-images a img {
+  width: 300px;
+  height: 220px;
+}
+
+.pop-container {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.351);
+}
+
+.pop-container .popup {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pop-container .popup img {
+  width: 900px;
+  height: 660px;
+  border: 20px solid #0f5e74;
+}
+
+.pop-container .popup .fa-arrow-left,
+.pop-container .popup .fa-arrow-right {
+  font-size: 30px;
+  color: #063341;
+  position: relative;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  padding: 5px;
+}
+
+.pop-container .popup .fa-arrow-left:hover,
+.pop-container .popup .fa-arrow-right:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.pop-container .popup .fa-arrow-left {
+  left: 60px;
+}
+
+.pop-container .popup .fa-arrow-right {
+  right: 60px;
+}
+
+.pop-container .popup .fa-xmark {
+  font-size: 30px;
+  color: red;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  position: absolute;
+  top: calc( (100vh - 700px) /2);
+  left: calc( 50vw + 450px);
+}
+
+.pop-container .popup .fa-xmark:hover {
+  color: #ff5100;
+}
+/*# sourceMappingURL=style.css.map */
