@@ -14,18 +14,18 @@ inputFile.addEventListener("change", function (e) {
 
 
 
-
-
-
-
 /* slider and popup*/
 let changableAttr;
 
-
 document.querySelectorAll(".all-images a").forEach(image => {
-  console.log("1");
     image.addEventListener("click",function(e){
         e.preventDefault();
+    })
+})
+
+
+document.querySelectorAll(".all-images").forEach(image => {
+    image.addEventListener("click",function(e){
         changableAttr=this.children[0].getAttribute("src");
         changeImgSrcAttr(changableAttr);
         document.querySelector(".pop-container").style.display="flex";

@@ -1,24 +1,3 @@
-// const imagesParentDiv = document.querySelector(".container .all-images");
-// export function imageUploader(files) {
-//   for (let file of files) {
-//     const fileReader = new FileReader();
-
-//     fileReader.onloadend = (e) => {
-//       const { result } = e.target;
-    
-//       const aTag=document.createElement("a");
-//       aTag.setAttribute("href","#");
-//       imagesParentDiv.append(aTag);
-//       aTag.innerHTML=`<img src="${result}">`;
-      
-//     };
-
-//     fileReader.readAsDataURL(file);
-//   }
-// }
-
-
-
 const images = document.querySelector(".all-images");
 
 export function imageUploader(files) {
@@ -32,7 +11,7 @@ export function imageUploader(files) {
       const img = document.createElement("img");
       img.setAttribute("src", result);
       const aTag=document.createElement("a");
-      aTag.setAttribute("href",result);
+      aTag.setAttribute("href","#");
 
       imageList.push({ fileName: file.name, result });
 
